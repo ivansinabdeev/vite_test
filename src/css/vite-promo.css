@@ -189,3 +189,7 @@ a {
   color: #fff;
   border-radius: 3px;
 }
+.swiper-button-next,
+.swiper-button-prev {
+  color: tomato;
+}
