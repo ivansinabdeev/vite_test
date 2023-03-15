@@ -193,3 +193,10 @@ a {
 .swiper-button-prev {
   color: tomato;
 }
+.swiper-pagination-bullet-active {
+  background-color: tomato;
+}
+.swiper-pagination-bullet {
+  width: 30px;
+  height: 30px;
+}
