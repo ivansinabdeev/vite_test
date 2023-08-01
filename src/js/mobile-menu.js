@@ -2,6 +2,7 @@
   const mobileMenu = document.querySelector('.js-menu-container');
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
+  // добавили доп класс что бы закрыть после нажатия на ссылку
   const menuLinks = document.querySelectorAll('.mobile-modal-link');
 
   const toggleMenu = () => {
@@ -16,9 +17,12 @@
     bodyScrollLock[scrollLockMethod](document.body);
   };
 
+  //  добавили что бы закрывалось при нажатии на ссылку
   menuLinks.forEach(menuLink => {
     menuLink.addEventListener('click', toggleMenu);
   });
+
+  // стандартно из скрипта от Репеты
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
 
