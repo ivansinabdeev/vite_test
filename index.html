@@ -10,8 +10,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     
-    <script type="module" crossorigin src="/vite_test_2/assets/index-ff32bac2.js"></script>
-    <link rel="stylesheet" href="/vite_test_2/assets/index-011e63bc.css">
+    <script type="module" crossorigin src="/vite_test_2/assets/index-3588c194.js"></script>
+    <link rel="stylesheet" href="/vite_test_2/assets/index-11a1240d.css">
   </head>
   <body>
     <!-- Ivan S -->
@@ -32,18 +32,24 @@
     <main>
       <!-- Vova S -->
       <section>
-    
+  <h2>Hero section</h2>
+  <button type="button" class="hero-btn button" data-modal-open>
+    Open Old Modal
+  </button>
+  <div class="backdrop is-hidden" data-modal>
+    <div class="hero-modal">
+      <button type="button" class="modal-close-btn" data-modal-close>
+        <svg class="modal-close-btn-icon" width="8" height="8">
+          <use href="./images/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <p class="modal-form-title">You opened old modal 😺</p>
+    </div>
+  </div>
 </section>
-    </main>
 
-    <!-- <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-
-      <img src="./img/javascript.svg" alt="" />
-    </section> -->
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
+      <section class="vite-promo">
   <div class="container">
     <div class="wrapper">
       <!-- Slider main container -->
@@ -158,6 +164,7 @@
   </div>
 </section>
 
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     
