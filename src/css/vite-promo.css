@@ -8,7 +8,7 @@
   align-items: center;
   gap: 4rem;
 
-  width: 86vw;
+  /* width: 86vw; */
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -16,16 +16,22 @@
 .vite-promo .wrapper {
   max-width: 36rem;
 }
+@media screen and (min-width: 768px) {
+  .vite-promo .title,
+  .vite-promo .text {
+    margin-bottom: 1.5rem;
 
-.vite-promo .title,
-.vite-promo .text {
-  margin-bottom: 1.5rem;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.14;
 
-  font-size: 3.5rem;
-  font-weight: 700;
-  line-height: 1.14;
-
-  color: #213547;
+    color: #213547;
+  }
+  .vite-promo .tagline {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: rgba(60, 60, 60, 0.7);
+  }
 }
 
 .vite-promo .gradient {
@@ -35,12 +41,6 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
-}
-
-.vite-promo .tagline {
-  font-size: 1.5rem;
-  line-height: 1.5;
-  color: rgba(60, 60, 60, 0.7);
 }
 
 .vite-promo .actions {
@@ -111,8 +111,14 @@
   background-image: url(/img/vite-logo.png);
 }
 .swiper {
-  width: 600px;
+  width: 290px;
   height: 300px;
+}
+@media screen and (min-width: 768px) {
+  .swiper {
+    width: 600px;
+    height: 300px;
+  }
 }
 
 .swiper-pagination-bullet-active {
